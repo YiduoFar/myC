@@ -1,0 +1,39 @@
+.l {
+	border: 1rpx solid red;
+}
+
+.trans-200ms {
+	transition: all 0.2s ease-in-out;
+}
+
+.trans-bezier {
+	transition: all 0.1s cubic-bezier(0, 1.53, .56, 1.11);
+}
+
+:root {
+	--seasonColor: #00d362;
+	--seasonColor2: #39dda1;
+	--seasonColorGradient: linear-gradient(-225deg, #26d578 0%, #00d157 48%, #39dda1 100%);
+	--seasonColorGradientTip: linear-gradient(-225deg, #26d578 0%, #00d157 48%, #39dda1 100%);
+}
+
+:root.spring_autumn {
+	--seasonColor: #00d362;
+	--seasonColor2: #39dda1;
+	--seasonColorGradient: linear-gradient(-225deg, #26d578 0%, #00d157 48%, #39dda1 100%);
+	--seasonColorGradientTip: linear-gradient(-225deg, #26d578 0%, #00d157 48%, #39dda1 100%);
+}
+
+:root.summer {
+	--seasonColor: #e79a00;
+	--seasonColor2: #fda085ee;
+	--seasonColorGradient: linear-gradient(20deg, #e7aa1abb 0%, #fda085ee 100%);
+	--seasonColorGradientTip: linear-gradient(20deg, #d99f17bb 0%, #d99f17bb 100%);
+}
+
+:root.winter {
+	--seasonColor: #55aaff;
+	--seasonColor2: #b9b7e6;
+	--seasonColorGradient: linear-gradient(-225deg, #7DE2FC 0%, #B9B6E5 100%);
+	--seasonColorGradientTip: linear-gradient(-225deg, #55aaff 0%, #aaa8d3 100%);
+}

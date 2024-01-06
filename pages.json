@@ -1,0 +1,33 @@
+{
+	"easycom": {
+		// 下载安装的方式需要前面的"@/"，npm安装的方式无需"@/"
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"enablePullDownRefresh": false // 是否开启下拉刷新，详见页面相关事件处理函数
+				// "navigationBarTitleText": ""
+			}
+		}, {
+			"path": "pages/Me/Me",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}
+	],
+	"globalStyle": {
+		"navigationStyle": "custom" // 是否自定义顶部导航栏(状态栏) 自定义custom、默认显示default
+		// "navigationBarTextStyle": "white", // 导航栏标题颜色及状态栏前景颜色，仅支持 black/white
+		// "navigationBarTitleText": "导航栏默认标题", // 导航栏标题默认文字内容
+		// "navigationBarBackgroundColor": "#aa0000", // 顶部导航栏(状态栏)背景颜色
+		// "backgroundColor": "#00557f", // 当enablePullDownRefresh为true时，下拉显示出来的窗口的背景色
+		// "backgroundTextStyle": "light", // 下拉 loading 的样式，仅支持 dark/light
+		// "enablePullDownRefresh": true, // 是否开启下拉刷新，触发下拉刷新时，配合页面生命周期onPullDownRefresh使用
+		// "onReachBottomDistance": 50 // 页面上拉触底事件触发时距页面底部距离，单位只支持px，默认50。配合页面生命周期onReachBottom使用
+	},
+	"uniIdRouter": {}
+}
